@@ -1,0 +1,347 @@
+.dashboard_back{
+    background-color: var(--grey);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard_container{
+    background-color: transparent;
+    width: 85%;
+    height: 90%;
+    display: flex;
+}
+.dashboard_container .reservations{
+    flex: 2;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.dashboard_container .data{
+    flex: 1;
+    background-color: transparent;
+}
+.dashboard_container .reservations .search_bar{
+    flex: 1;
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 2px solid var(--grey);
+}
+.dashboard_container .reservations .filter_btns{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.dashboard_container .reservations .filter_btns button{
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px 0;
+
+    transition: all 0s linear;
+}
+.dashboard_container .reservations .filter_btns button:hover{
+    cursor: pointer;
+}
+.dashboard_container .reservations .filter_btns button span{
+    color: rgb(75, 75, 75);
+    font-size: 15px;
+}
+.dashboard_container .reservations .filter_btns .btn_selected{
+    background-color: var(--main_blueColor);
+    color: white;
+}
+.dashboard_container .reservations .data_interface{
+    flex: 35;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 20px 15px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.dashboard_container .reservations .data_interface .reservation_card{
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 5px;
+    border-radius: 20px;
+    box-shadow: 1px 4px 10px black;
+}
+.dashboard_container .reservations .data_interface .reservation_card div{
+    margin-bottom: 6px;
+}
+.dashboard_container .reservations .data_interface .reservation_card .fullname{
+    display: flex;
+}
+.dashboard_container .reservations .data_interface .reservation_card .fullname .nom{
+    margin-right: 8px;
+    font-weight: 600;
+}
+.dashboard_container .reservations .data_interface .reservation_card .fullname .prenom{
+    font-weight: 600;
+}
+.dashboard_container .reservations .data_interface .reservation_card .service{
+    font-weight: 800;
+    text-align: center;
+}
+.dashboard_container .reservations .data_interface .reservation_card .done{
+    width: 15px;
+    height: 15px;
+    background-color: green;
+}
+.dashboard_container .reservations .data_interface .reservation_card .not_done{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+}
+.dashboard_container .reservations .data_interface .reservation_card .valid_btns{
+    display: flex;
+}
+.dashboard_container .reservations .data_interface .reservation_card .valid_btns .valid{
+    flex: 1;
+    background-color: green;
+    color: white;
+    border: none;
+    margin: 5px 5px 0 0;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px 0 0 8px;
+}
+.dashboard_container .reservations .data_interface .reservation_card .valid_btns .non_valid{
+    flex: 1;
+    background-color: red;
+    color: white;
+    border: none;
+    margin: 5px 0 0 5px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 0 8px 8px 0;
+}
+.dashboard_container .reservations .data_interface .reservation_card .valid_btns button{
+    transition: all 0.1s linear;
+}
+.dashboard_container .reservations .data_interface .reservation_card .valid_btns button:hover{
+    cursor: pointer;
+}
+.dashboard_container .reservations .data_interface .reservation_card .valid_btns button:active{
+    opacity: 0.7;
+}
+
+.dashboard_container .data .data_result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 51, 51);
+    background-color: white;
+    width: 100%;
+    height: 35%;
+    font-size: 80px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.dashboard_container .data .modify_tools{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.dashboard_container .data .modify_tools button{
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px 0;
+
+    transition: all 0s linear;
+}
+.dashboard_container .data .modify_tools button:hover{
+    cursor: pointer;
+}
+.dashboard_container .data .modify_tools button:active{
+    background-color: whitesmoke;
+}
+
+.dashboard_container .absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dashboard_container .absolute .email_list{
+    position: relative;
+    width: 35%;
+    height: 60%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.dashboard_container .absolute .email_list .remove_list{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.dashboard_container .absolute .email_list .remove_list:hover{
+    cursor: pointer;
+}
+
+.dashboard_container .absolute .login_container{
+    position: relative;
+    width: 35%;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.dashboard_container .absolute .login_container p{
+    color: black;
+    font-size: 20px;
+}
+.dashboard_container .absolute .login_container .remove_list{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.dashboard_container .absolute .login_container .remove_list:hover{
+    cursor: pointer;
+}
+
+/* form register */
+.dashboard_container .absolute .login_container{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 35%;
+}
+
+.dashboard_container .absolute .login_container form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dashboard_container .absolute .login_container form label{
+    font-weight: 700;
+}
+
+.dashboard_container .absolute .login_container form input{
+    margin: 8px 0 20px 0;
+    padding: 10px 8px;
+    font-size: 15px;
+    border-radius: 0 0 7px 7px;
+    border: none;
+    /* border-bottom: 1px solid rgb(135, 135, 135); */
+    background-color: rgb(246, 246, 246);
+    text-wrap: wrap;
+}
+
+.dashboard_container .absolute .login_container form button{
+    background-color: var(--main_blueColor);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+    margin: auto 0;
+    z-index: 20;
+}
+.dashboard_container .absolute .login_container form button:hover{
+    cursor: pointer;
+    font-size: 21px;
+    box-shadow: 3px 3px 9px black;
+    transition: all 0.1s linear;
+}
+.dashboard_container .absolute .login_container form button:active{
+    font-size: 20px;
+    box-shadow: 0px 0px 0px black;
+}
+
+.dashboard_container .absolute .imageBox{
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 35%;
+}
+.dashboard_container .absolute .imageBox .title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.dashboard_container .absolute .imageBox input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+}
+.dashboard_container .absolute .imageBox label{
+    font-weight: 500;
+}
+.dashboard_container .absolute .imageBox select{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.dashboard_container .absolute .imageBox button{
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: var(--main_blueColor);
+    font-weight: 600;
+
+    transition: all 0s linear;
+}
+.dashboard_container .absolute .imageBox button:hover{
+    cursor: pointer;
+}
+.dashboard_container .absolute .imageBox button:active{
+    background-color: rgba(44, 71, 206, 0.5)
+}
+.dashboard_container .absolute .imageBox .remove_list{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.dashboard_container .absolute .imageBox .remove_list:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+:root{
+  --main_font: 'inter';
+  --main_blueColor: #2C46CD;
+  --hard_blueColor: #101A4D;
+  --main_yellow: #E49622;
+  --grey: #E5E5E5;
+  --purple: #c0aff2;
+  --purple_light: #bcbcec;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.5s linear;
+  /* scrollbar-width: none; */
+}
+
+::-webkit-scrollbar{
+  background: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  /* background: #b9b8b8; */
+  background: linear-gradient(to top, rgb(132, 0, 92), rgb(8, 0, 99));
+  border-radius: 10px;
+}

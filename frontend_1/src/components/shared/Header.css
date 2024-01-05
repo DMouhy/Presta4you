@@ -1,0 +1,69 @@
+.header_container{
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--main_blueColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.header_container .logo_container{
+    margin: auto 0;
+    background-color: transparent;
+    width: 8%;
+    height: 90%;
+    overflow: hidden;
+}
+.header_container .logo_container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* .header_container .logo_container p{
+    color: red;
+    font-weight: 900;
+    font-size: 50px;
+} */
+
+.header_container button{
+    background-color: var(--hard_blueColor);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+    margin: auto 0;
+}
+.header_container button:hover{
+    cursor: pointer;
+    font-size: 21px;
+    box-shadow: 3px 3px 9px black;
+    transition: all 0.1s linear;
+}
+.header_container button:active{
+    font-size: 20px;
+    box-shadow: 0px 0px 0px black;
+}
+
+@media (max-width: 800px) {
+    .header_container {
+        padding: 0 2%; /* Further adjusted padding for very small screens */
+    }
+
+    .header_container .logo_container {
+        width: 20%; /* Adjusted width for very small screens */
+    }
+
+    .header_container button {
+        font-size: 14px; /* Adjusted font size for very small screens */
+    }
+
+    .header_container button:hover {
+        font-size: 15px; /* Adjusted font size for very small screens */
+    }
+
+    .header_container button:active {
+        font-size: 14px; /* Adjusted font size for very small screens */
+    }
+}
